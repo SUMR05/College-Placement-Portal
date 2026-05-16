@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>College Placement Portal</title>
+
+<style>
+body {
+font-family: Arial;
+padding: 20px;
+background: #f5f5f5;
+}
+
+section {
+text-align: center;
+margin-bottom: 20px;
+}
+
+form {
+margin-bottom: 20px;
+}
+
+input, select, textarea, button {
+display: block;
+margin: 10px 0;
+padding: 10px;
+width: 300px;
+}
+
+.card {
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px gray;
+background: white;
+width: 300px;
+margin-top: 20px;
+}
+
+.dashboard-card {
+padding: 20px;
+background: white;
+margin-top: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px gray;
+width: 300px;
+}
+
+button {
+background: blue;
+color: white;
+border: none;
+cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+input, select, textarea, button, .card, .dashboard-card {
+width: 100%;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Placement Portal</h2>
+</header>
+
+<section>
+<h1>College Placement Portal</h1>
+<p>Apply to Cognizant companies</p>
+</section>
+
+<form onsubmit="login(); return false;">
+<input type="email" placeholder="Enter Email" required>
+<input type="password" placeholder="Enter Password" required>
+<button type="submit">Login</button>
+</form>
+
+<input type="file">
+
+<select>
+<option>CSE</option>
+<option>ECE</option>
+</select>
+
+<div class="card">
+<h2>Google</h2>
+<p>Role: SDE Intern</p>
+<p>Package: 12 LPA</p>
+<button>Apply</button>
+</div>
+
+<textarea placeholder="Why should we hire you?"></textarea>
+
+<div class="dashboard-card">
+<h3>Applications</h3>
+<p>5 Applied</p>
+</div>
+
+<script>
+function login() {
+alert("Login Successful");
+}
+</script>
+
+</body>
+</html>
